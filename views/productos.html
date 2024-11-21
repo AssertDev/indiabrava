@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>IndiaBrava | Productos</title>
+   <!--CSS Boostrap-->
+   <link rel="stylesheet" href="./css/bootstrap.min.css">
+   <!--CSS mis estilos-->
+   <link rel="stylesheet" href="./css/general.css">
+   <link rel="stylesheet" href="./css/layout.css">
+   <link rel="stylesheet" href="./css/components.css">
+   <link rel="stylesheet" href="./css/variables.css">
+   <link rel="stylesheet" href="./css/utils.css">
+   <!--Iconos-->
+   <link rel="stylesheet" href="./icons/font/bootstrap-icons.min.css">
+   <!--Logo-->
+   <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+</head>
+<body>
+    <div id="preloader">
+        <div class="loadingio-spinner-spin-2by998twmg8"><div class="ldio-yzaezf3dcmj">
+            <div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div>
+            </div></div>
+    </div>
+    <div class="d-flex h-100">
+        <aside id="mainAside" class="aside-background">
+            <div class="d-flex flex-column">
+                <div class="aside-header d-flex justify-content-center align-items-center mt-3">
+                    <img src="./img/logo.png" alt="user" width="70px" height="60px">
+                    <h5 class="aside-title-logo ps-3 text-white">La India Brava</h5>
+                </div>
+                <nav class="mt-3">
+                    <hr class="text-white">
+                    <p class="aside-category-name text-white fw-bold ps-2">Menú</p>
+                    <ul class="list-unstyled w-100">
+                        <li class="nav-section-li px-3 py-1"><a href="inicio.html" data-bs-toggle="tooltip" title="Inicio" data-bs-placement="right" class="d-block p-2 rounded-10 text-decoration-none text-white nav-tooltip"><i class="bi bi-house-door-fill"></i> <span class="aside-section-name">Inicio</span></a></li>
+                        <li class="nav-section-li px-3 py-1" data-block-section="Gestor"><a href="clientes.html" data-bs-toggle="tooltip" title="Clientes" data-bs-placement="right" class="d-block p-2 rounded-10 text-decoration-none text-white nav-tooltip"><i class="bi bi-people-fill"></i> <span class="aside-section-name">Clientes</span></a></li>
+                        <li class="nav-section-li px-3 py-1"><a data-bs-toggle="tooltip" title="Productos" data-bs-placement="right" class="nav-section-select d-block p-2 rounded-10 text-decoration-none text-white nav-tooltip"><i class="bi bi-box-seam-fill"></i> <span class="aside-section-name">Productos</span></a></li>
+                        <li class="nav-section-li px-3 py-1"><a href="ventas.html" data-bs-toggle="tooltip" title="Ventas" data-bs-placement="right" class="d-block p-2 rounded-10 text-decoration-none text-white nav-tooltip"><i class="bi bi-cart-check-fill"></i> <span class="aside-section-name">Ventas</span></a></li>
+                        <li class="nav-section-li px-3 py-1" data-block-section="Gestor"><a href="usuarios.html" data-bs-toggle="tooltip" title="Usuarios" data-bs-placement="right" class="d-block p-2 rounded-10 text-decoration-none text-white nav-tooltip"><i class="bi bi-person-workspace"></i> <span class="aside-section-name">Usuarios</span></a></li>
+                    </ul>
+                    <hr class="text-white">
+                    <p class="aside-category-name text-white fw-bold ms-2">Configuración</p>
+                    <ul class="list-unstyled w-100">
+                        <li class="nav-section-li px-3 py-1"><a data-bs-toggle="tooltip" href="cuenta.html" title="Mi cuenta" data-bs-placement="right" class="d-block p-2 rounded-10 text-decoration-none text-white nav-tooltip"><i class="bi bi-person-gear"></i> <span class="aside-section-name">Mi cuenta</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+    
+    
+        <main class="bg-main container-fluid p-0">
+            <header class="d-flex justify-content-between align-items-center shadow">
+                <div class="d-flex justify-content-center align-items-center perfil-card rounded-10 mx-3 px-3 py-1">
+                    <img src="./img/admin.png" class="p-1 rounded-20" width="35px" height="35px">
+                    <div class="d-flex flex-column justify-content-start ms-2">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <span id="navRolUsuario" class="badge perfil-badge rounded-pill bg-danger me-2">Dueño</span>
+                            <p id="navNombreUsuario" class="m-0 fw-bold"></p>
+                        </div>
+                        <p id="navCorreoUsuario" class="text-gray m-0">indiabrava@gmail.com</p>
+                    </div>
+                </div>
+                 <div class="d-flex align-items-center mx-3">
+                    <button id="btnCerrarSesion" class="btn btn-danger ms-3"><i class="bi bi-box-arrow-right"></i> Cerrar sesión</button>
+                 </div>
+             </header>
+             <section>
+                <div class="m-4 bg-white px-5 py-3 rounded-10 shadow-sm">
+                    <h1 class="fs-3 fw-bold">Panel de productos</h1>
+                    <p class="fs-6">En el panel de productos, podrá registrar nuevos productos en el sistema, actualizar los datos de productos existentes, consultar el listado de productos disponibles y buscar productos específicos.</p>
+                </div>
+                <div class="m-4 p-5 bg-white rounded-10 shadow-sm">
+                    <form class="d-flex justify-content-between align-items-center mb-4">
+                        <div>
+                            <button type="button" class="btn-primario px-3 py-2 rounded-10 shadow" onclick="abrirModalNuevoProducto()"><i class="bi bi-person-plus-fill"></i> Agregar producto</button>
+                        </div>
+                        <div class="d-flex">
+                            <div class="me-3">
+                               <h6>Buscar producto por: </h6>
+                               <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="buscarProductoID">
+                                  <label class="form-check-label" for="buscarProductoID">
+                                    ID
+                                  </label>
+                               </div>
+                               <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="buscarProductoNombre" checked>
+                                  <label class="form-check-label" for="buscarProductoNombre">
+                                    Nombre
+                                  </label>
+                               </div>
+                            </div>
+                            <div class="form-floating me-3">
+                               <input type="text" class="form-control" id="floatingBuscar" placeholder="Producto">
+                               <label for="floatingBuscar">Producto</label>
+                            </div>
+                            <button type="button" class="btn btn-secondary px-4 fs-5" onclick="buscarProducto();"><i class="bi bi-search"></i></button>
+                            <button type="button" class="btn btn-dark ms-2 px-4 fs-5" onclick="recargarProductos();" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Recargar tabla de los productos"><i class="bi bi-list-ul"></i></button>
+                         </div>
+                    </form>
+                    <div class="table-responsive tabla-datos-scroll">
+                        <table id="tablaDatos" class="table table-hover table-striped table-borderless">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th scope="col">ID</th>           
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Unidad de Medida</th>
+                                    <th scope="col">Cont. Neto</th>
+                                    <th scope="col">Precio</th>
+                                    <th scope="col">Stock</th>
+                                    <th scope="col">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!--Productos-->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+             </section>
+        </main>
+    
+    
+    
+        <div class="modal fade" id="modalNuevoProducto" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content">
+                <div class="modal-header header-title">
+                  <h5 class="modal-title text-white fw-bold fs-3">NUEVO PRODUCTO</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-main">
+                    <form id="formNuevoProducto" class="needs-validation p-4 pb-3" novalidate>
+                        <div>
+                            <div class="form-floating mb-2">
+                                <input type="text" class="form-control" id="floatingNombre" placeholder="Nombre del producto" pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ0-9\s]+$" maxlength="35" required>
+                                <label for="floatingNombre" class="text-gray"><i class="bi bi-box-fill"></i> Nombre del producto</label>
+                                <div class="invalid-feedback">Ingrese el nombre del producto.</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="form-floating mb-2">
+                                        <input type="text" class="form-control" id="floatingPrecio" placeholder="Precio" pattern="^\d+(\.\d{1,2})?$" required>
+                                        <label for="floatingPrecio" class="text-gray"><i class="bi bi-cash"></i> Precio unitario</label>
+                                        <div class="invalid-feedback">Ingrese un valor del precio.</div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-floating mb-2">
+                                        <input type="number" class="form-control" id="floatingNeto" placeholder="Contenido neto" required>
+                                        <label for="floatingNeto" class="text-gray"><i class="bi bi-collection-fill"></i> Contenido neto</label>
+                                        <div class="invalid-feedback">Ingrese un valor del contenido neto.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                          <option selected value="Mililitros">Mililitros (ml)</option>
+                                          <option value="Litros">Litros (L)</option>
+                                          <option value="Gramos">Gramos (g)</option>
+                                        </select>
+                                        <label for="floatingSelect" class="text-gray"><i class="bi bi-list"></i> Unidad de medida</label>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-floating mb-2">
+                                        <input type="number" class="form-control" id="floatingStock" placeholder="Stock" required>
+                                        <label for="floatingStock" class="text-gray"><i class="bi bi-boxes"></i> Stock</label>
+                                        <div class="invalid-feedback">Ingrese un valor del stock.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center my-3">
+                            <button type="submit" class="btn btn-dark px-4 py-2 me-4 rounded-10"><i class="bi bi-person-fill-add"></i> Guardar</button>
+                            <button type="button" class="btn btn-secondary px-4 me-4 py-2 rounded-10" onclick="limpiarForm({ entidad: 'Producto' });"><i class="bi bi-eraser"></i> Limpiar</button>
+                        </div>
+                    </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" tabindex="-1" id="modalConfirmacion" aria-hidden="false">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-alert-header">
+                        <div class="icon-alert-box d-flex justify-content-center align-items-center" style="background-color: var(--confirmacion);">
+                            <i class="bi bi-question text-white fs-1"></i>
+                        </div>
+                        <h4 class="modal-title w-100 text-center mt-5">Confirmación</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p id="mensajeConfirmacion" class="text-center fs-6">¿Estás seguro de hacer esto?</p>
+                        <div class="d-flex justify-content-center py-2">
+                            <button type="button" class="btn-primario rounded me-4 px-4 py-2" id="btnConfirmacion">Sí</button>
+                            <button type="button" class="btn btn-danger px-4 py-2" data-bs-dismiss="modal">No</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="modal fade" tabindex="-1" id="modalAlerta" aria-hidden="false">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class=" modal-alert-header">
+                        <div class="icon-alert-box d-flex justify-content-center align-items-center" id="cajaIconoAlerta">
+                            <i class="bi bi-check text-white fs-1" id="iconoAlerta"></i>
+                        </div>
+                        <h4 id="tituloAlerta" class="modal-title w-100 text-center mt-5">Título</h4>
+                    </div>
+                    <div class="modal-body p-4">
+                        <p id="mensajeAlerta" class="text-center fs-6">Mensaje de alerta</p>
+                        <div class="d-flex justify-content-center pt-2">
+                            <button type="button" class="btn-primario rounded-10 shadow py-2 px-5" id="btnAlerta">Aceptar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   <!--JS Boostrap-->
+   <script src="./js/bootstrap.bundle.min.js"></script>
+   <script src="./js/index.js"></script>
+   <script src="./js/forms.js"></script>
+   <script src="./js/utils.js"></script>
+   <script src="./js/controller/productosControl.js"></script>
+</body>
+</html>
