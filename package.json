@@ -1,0 +1,21 @@
+{
+  "name": "indiabrava-web",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "express": "^4.21.1",
+    "html-pdf-node": "^1.0.8",
+    "jsonwebtoken": "^9.0.2",
+    "pdfkit": "^0.15.1",
+    "puppeteer": "^23.8.0",
+    "sqlite3": "^5.1.7"
+  }
+}
